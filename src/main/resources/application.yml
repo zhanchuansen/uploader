@@ -1,0 +1,35 @@
+server:
+  port: 8082
+  connectionTimeout: 180000
+  servlet:
+    path: /boot
+
+spring:
+  servlet:
+    multipart:
+      max-file-size: 1000MB
+      max-request-size: 5000MB
+  datasource:
+    url: jdbc:mysql://localhost:3306/test?characterEncoding=utf-8&useSSL=false
+    username: root
+    password: 123456
+    driver-class-name: com.mysql.jdbc.Driver
+  jpa:
+    properties:
+      hibernate:
+        hbm2ddl:
+          auto: update
+    show-sql: false
+
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss
+    locale: zh
+    time-zone: GMT+8
+
+logging:
+  level:
+    org.boot.uploader.*: debug
+
+prop:
+  upload-folder: D://UploaderFile
+
