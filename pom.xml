@@ -25,7 +25,7 @@
         <lombok.version>1.16.20</lombok.version>
         <commons-lang3.version>3.3.2</commons-lang3.version>
         <commons.io.version>2.4</commons.io.version>
-        <apache.ant.version>1.9.4</apache.ant.version>
+        <apache.ant.version>1.9.15</apache.ant.version>
         <commons-collections.version>4.0</commons-collections.version>
         <commons-pool2.version>2.3</commons-pool2.version>
     </properties>
